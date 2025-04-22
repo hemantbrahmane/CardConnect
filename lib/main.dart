@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
-    home: Scaffold(
-      backgroundColor: Colors.brown,
-      body: Container(),
-    ),
-  ),);
+  runApp(CardConnect());
+}
+
+class CardConnect extends StatelessWidget {
+  const CardConnect({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: HomeScreen(),
+    );
 }
